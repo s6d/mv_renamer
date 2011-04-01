@@ -45,20 +45,22 @@ def main(argv):
 		fail('Not enough args')
 	filepath, filename = os.path.split(argv[0])
 	title = search_by_filename(filename)
+	title0 ,title1 = title.split('/')
 
 	if title == None:
 		alternative_search()
 
-	print 'old name: ', filename , 'new name: ', title
+	print 'old name: ', argv[0],  'new name ru: ', title0 ,  'new name en: ', title1
 #        path = args[0];
 #        print path
+#	return title
 
 def alternative_search():
 
 	return
 
 def file_opertion():
-	win32file.CreateHardLink (new_fullpath, self.filename)
+	
 	return
 
 
